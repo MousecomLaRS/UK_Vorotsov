@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="РазделыДокумента" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделы документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделы документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="РазделыДокументаРасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<CheckBoxField name="Отпуск" id="54">
+					<DataPath>Отпуск</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтпускКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ОтпускРасширеннаяПодсказка" id="56"/>
+					<Events>
+						<Event name="OnChange">ОтпускПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="Увольнение" id="57">
+					<DataPath>Увольнение</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="УвольнениеКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="УвольнениеРасширеннаяПодсказка" id="59"/>
+					<Events>
+						<Event name="OnChange">УвольнениеПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ВидыДокументов" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды документов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ВидыДокументовРасширеннаяПодсказка" id="23"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ВидыДокументовПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="ЗаявлениеКТС" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявление КТС</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявление КТС</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗаявлениеКТСРасширеннаяПодсказка" id="25"/>
+					<ChildItems>
+						<InputField name="Должность" id="34">
+							<DataPath>Объект.Должность</DataPath>
+							<ContextMenu name="ДолжностьКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<InputField name="Участок" id="37">
+							<DataPath>Объект.Участок</DataPath>
+							<ContextMenu name="УчастокКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="УчастокРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<InputField name="ФИО" id="40">
+							<DataPath>Объект.ФИО</DataPath>
+							<ContextMenu name="ФИОКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ФИОРасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<InputField name="ДатаПриёма" id="43">
+							<DataPath>Объект.ДатаПриёма</DataPath>
+							<ContextMenu name="ДатаПриёмаКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ДатаПриёмаРасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<UsualGroup name="Группа3" id="52">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<BackColor>#CCFFCC</BackColor>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="53"/>
+							<ChildItems>
+								<InputField name="ДатаДоговора" id="46">
+									<DataPath>Объект.ДатаДоговора</DataPath>
+									<ContextMenu name="ДатаДоговораКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="ДатаДоговораРасширеннаяПодсказка" id="48"/>
+								</InputField>
+								<InputField name="НомерДоговора" id="49">
+									<DataPath>Объект.НомерДоговора</DataPath>
+									<ContextMenu name="НомерДоговораКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="НомерДоговораРасширеннаяПодсказка" id="51"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="СформироватьЗаявлениеКТС" id="30">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СформироватьЗаявлениеКТС</CommandName>
+							<ExtendedTooltip name="СформироватьЗаявлениеКТСРасширеннаяПодсказка" id="31"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Удостоверение" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удостоверение</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удостоверение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="УдостоверениеРасширеннаяПодсказка" id="27"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="9">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="10"/>
+							<ChildItems>
+								<InputField name="НомерУдостоверения" id="11">
+									<DataPath>Объект.НомерУдостоверения</DataPath>
+									<ContextMenu name="НомерУдостоверенияКонтекстноеМеню" id="12"/>
+									<ExtendedTooltip name="НомерУдостоверенияРасширеннаяПодсказка" id="13"/>
+								</InputField>
+								<InputField name="ДатаУдостоверения" id="4">
+									<DataPath>Объект.ДатаУдостоверения</DataPath>
+									<ContextMenu name="ДатаУдостоверенияКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ДатаУдостоверенияРасширеннаяПодсказка" id="6"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа2" id="17">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="18"/>
+							<ChildItems>
+								<InputField name="НомерРешения" id="19">
+									<DataPath>Объект.НомерРешения</DataPath>
+									<ContextMenu name="НомерРешенияКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="НомерРешенияРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<InputField name="ДатаРешения" id="14">
+									<DataPath>Объект.ДатаРешения</DataPath>
+									<ContextMenu name="ДатаРешенияКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ДатаРешенияРасширеннаяПодсказка" id="16"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="СформироватьДокумент" id="7">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СформироватьУдостоверение</CommandName>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ExtendedTooltip name="СформироватьДокументРасширеннаяПодсказка" id="8"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="ЗаявлениеБанк" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявление банк</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявление банк</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗаявлениеБанкРасширеннаяПодсказка" id="29"/>
+					<ChildItems>
+						<Button name="СформироватьЗаявлениеБанк" id="32">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СформироватьЗаявлениеБанк</CommandName>
+							<ExtendedTooltip name="СформироватьЗаявлениеБанкРасширеннаяПодсказка" id="33"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<Button name="Печатать" id="62">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Печатать</CommandName>
+			<ExtendedTooltip name="ПечататьРасширеннаяПодсказка" id="63"/>
+		</Button>
+		<HTMLDocumentField name="ПолеХТМЛ" id="1">
+			<DataPath>ПолеХТМЛ</DataPath>
+			<ContextMenu name="ПолеХТМЛКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПолеХТМЛРасширеннаяПодсказка" id="3"/>
+		</HTMLDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ДокументыВКТС</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПолеХТМЛ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле ХТМЛ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Отпуск" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отпуск</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Увольнение" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Увольнение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьУдостоверение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать удостоверение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать удостоверение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьУдостоверение</Action>
+		</Command>
+		<Command name="СформироватьЗаявлениеКТС" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать заявление КТС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать заявление КТС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьЗаявлениеКТС</Action>
+		</Command>
+		<Command name="СформироватьЗаявлениеБанк" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать заявление банк</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать заявление банк</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьЗаявлениеБанк</Action>
+		</Command>
+		<Command name="Печатать" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печатать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печатать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печатать</Action>
+		</Command>
+	</Commands>
+</Form>
