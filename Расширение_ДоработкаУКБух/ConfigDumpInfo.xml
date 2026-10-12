@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="Catalog.ФизическиеЛица" id="d287a691-00f0-4e88-b27b-870f57130756" configVersion="070d1693ff66d9a01dfe190a444a2fdaab0d7eea"/>
+		<Metadata name="ChartOfAccounts.Хозрасчетный" id="b87cbec6-eec1-437f-a281-5590048dd80f" configVersion="09914de6bd51f7fa5b886720e3e6c0e54995136d"/>
+		<Metadata name="Configuration.РоманДоработкаУК" id="fdaf8987-9e69-4a1d-8db6-5c28209e73a6" configVersion="8558cb376c6fb38de970c617f98e51d119548d99"/>
+		<Metadata name="Document.ОтражениеЗарплатыВБухучете" id="518e5257-6fb6-4188-9171-f62715f17a47" configVersion="a336c96407cf926b0889f189b237e43b810c0237"/>
+		<Metadata name="Document.ОтражениеЗарплатыВБухучете.ObjectModule" id="518e5257-6fb6-4188-9171-f62715f17a47.0" configVersion="ca35f7f9b0956ba7296a0092bdd906f4bbf618b0"/>
+		<Metadata name="Document.СписаниеСРасчетногоСчета" id="1ff51940-a351-498b-8f56-0bf883564db1" configVersion="e95d3c9ebf6e3f07df5bf9b63059a4726d51e964"/>
+		<Metadata name="Document.СписаниеСРасчетногоСчета.ManagerModule" id="1ff51940-a351-498b-8f56-0bf883564db1.2" configVersion="f7d517d608275f013cb0e97a475b63cb276d3c57"/>
+		<Metadata name="Language.Русский" id="6845d72a-e9c8-47e0-8857-aa6061a7d216" configVersion="be6caff3e6e099219364805d28580b23e7a9657a"/>
+		<Metadata name="Role.Расш1_ОсновнаяРольЛаРС" id="a2fba84e-c938-4823-a2f4-cf5ce8ac8a89" configVersion="548f059c051db155a281c8ecfaecf18fd3afde39"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
